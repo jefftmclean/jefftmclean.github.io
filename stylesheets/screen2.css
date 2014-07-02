@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 16, ../sass/screen2.scss */
+* {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 20, ../sass/screen2.scss */
+body {
+  font-family: "proxima nova";
+  background-color: #fff;
+}
+
+/* line 24, ../sass/screen2.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 27, ../sass/screen2.scss */
+a:hover {
+  text-decoration: none;
+  color: #fcb31c;
+}
+
+/* line 32, ../sass/screen2.scss */
+p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 37, ../sass/screen2.scss */
+h1 {
+  color: #363f45;
+  text-transform: uppercase;
+  font-family: "proxima nova extra condensed";
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -1px;
+}
+
+/* line 45, ../sass/screen2.scss */
+h2 {
+  color: #4c5f6d;
+  font-size: 28px;
+  font-weight: 700;
+  transition: all .1s;
+  letter-spacing: -.3px;
+}
+
+/* line 52, ../sass/screen2.scss */
+.img-label {
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 56, ../sass/screen2.scss */
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 19px;
+}
+/* line 61, ../sass/screen2.scss */
+h3 .glyphicon {
+  font-size: 14px;
+}
+
+/* line 65, ../sass/screen2.scss */
+h4 {
+  color: #4c5f6d;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
