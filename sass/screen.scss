@@ -221,37 +221,3 @@ $base: 100% / 12;
     width: 100%;
   }
 }
-
-#hello{
-  -webkit-animation-duration: .2s;
-  -webkit-animation-name: hello;
-  -webkit-animation-iteration-count: 2;
-  -webkit-animation-delay: 1s;
-  -webkit-transition: all .1s;
-}
-@-webkit-keyframes hello{
-  0%{
-    @include transform(rotate(0));
-  }
-  50%{
-    @include transform(rotate(1deg) translateY(-3px));
-  }
-  100%{
-    @include transform(rotate(0));
-  }
-}
-#me{
-  max-width: 190px;
-  -webkit-animation-name: me;
-  -webkit-animation-duration: 1.2s;
-}
-@-webkit-keyframes me{
-  0%{
-    @include transform(translate(-50px));
-    opacity: 0;
-  }
-  100%{
-    @include transform(translate(0));
-    opacity: 1;
-  }
-}
