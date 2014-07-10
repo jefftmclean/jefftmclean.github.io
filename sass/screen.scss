@@ -23,6 +23,9 @@ body{
   background-color: #fff;
   background-color: $blue3;
 }
+.row{
+  margin-bottom: 10px;
+}
 .white{
   background-color: #fff;
   margin: 40px auto;
@@ -62,6 +65,7 @@ a{
 }
 .contact-link{
   display: block;
+  margin-bottom: -5px;
   color: #fff;
   will-change: transform;
   @include transition(transform .15s ease);
@@ -84,7 +88,7 @@ hr{
 small{
   color: #888;
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 15px;
   a{
     font-weight: 600;
     color: $blue1;
@@ -162,7 +166,7 @@ div .thumbnail{
   -webkit-animation-duration: .2s;
   -webkit-animation-name: hello;
   -webkit-animation-iteration-count: 2;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 2s;
   -webkit-transition: all .1s;
 }
 @-webkit-keyframes hello{
@@ -178,12 +182,15 @@ div .thumbnail{
 }
 #me{
   -webkit-animation-name: me;
-  -webkit-animation-duration: 1.2s;
+  -webkit-animation-duration: 2.2s;
   @include border-radius(50%);
 }
 @-webkit-keyframes me{
   0%{
     @include transform(translate(-50px));
+    opacity: 0;
+  }
+  30%{
     opacity: 0;
   }
   100%{
