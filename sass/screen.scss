@@ -19,7 +19,7 @@ $gold: #fcb31c;
   -webkit-backface-visibility: hidden;
 }
 body{
-  font-family: "proxima nova";
+  font-family: "proxima-nova";
   background-color: #fff;
   background-color: $blue3;
 }
@@ -34,7 +34,7 @@ body{
   & p{color: #eee;}
   margin: 50px 0;
 }
-nav a{
+nav>a{
   display: block;
 }
 p.blue{
@@ -45,7 +45,6 @@ p.blue{
   padding-bottom: 40px;
 }
 a{
-  display: inline-block;
   text-decoration: none;
   &:hover{
     text-decoration: none;
@@ -83,9 +82,9 @@ hr{
   margin-top: 20px;
 }
 small{
-  font-size: 14px;
   color: #888;
   margin: 5px 0;
+  font-size: 14px;
   a{
     font-weight: 600;
     color: $blue1;
@@ -94,7 +93,7 @@ small{
 h1{
   color: $blue3;
   text-transform: uppercase;
-  font-family: "proxima nova extra condensed";
+  font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
   font-size: 72px;
   line-height: 60px;
