@@ -62,6 +62,7 @@ a{
   }
 }
 .contact-link{
+  display: block;
   color: #fff;
   will-change: transform;
   @include transition(transform .15s ease);
@@ -82,8 +83,8 @@ hr{
   margin-top: 20px;
 }
 small{
+  font-size: 14px;
   color: #888;
-  display: inline-block;
   margin: 5px 0;
   a{
     font-weight: 600;
