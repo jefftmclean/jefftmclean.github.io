@@ -28,9 +28,10 @@ body{
 }
 .white{
   background-color: #fff;
-  margin: 40px auto;
+  margin-top: 40px;
+  padding: 20px 40px;
   border-radius: 4px;
-  @include box-shadow(0 25px 25px -15px #000);
+  @include box-shadow(0 20px 20px -15px rgba(#000, 0.7));
 }
 .dark{
   & h1{color: $gold;}
@@ -60,7 +61,7 @@ a{
   color: $blue4;
   -webkit-transition: -webkit-transform .15s ease;
   &:hover{
-    @include transform(translate(-30px));
+    @include transform(translate(-25px));
   }
 }
 .contact-link{
@@ -73,10 +74,37 @@ a{
     @include transform(translate(30px));
   }
 }
+.new-tab{
+  &:hover:after{
+    content: " > opens in new tab";
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+  }
+}
+p .email-link{
+  &:hover:after{
+    content: url(../images/external.svg);
+    width: 20px;
+    height: 20px;
+  }
+}
+.tel{
+  &:hover:after{
+    content: " > opens calling app";
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+  }
+}
 p{
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
+  margin: 30px 0;
+  a{
+    font-weight: 600;
+  }
 }
 hr{
   margin-top: 15px;
@@ -138,16 +166,18 @@ h4{
 }
 div .thumbnail{
   padding: 0;
-  border: 1px solid #fff;
+  border: none;
   border-radius: 4px;
   text-align: center;
+  transition: all .15s ease;
+  -webkit-backface-visibility: hidden;
   &:hover{
     h2{
       color: $gold;
     }
-    border: 1px solid #fff;
-    @include transform(translateY(-10px));
-    @include box-shadow(0 25px 25px -15px #000);
+    border: none;
+    @include transform(translateY(-5px));
+    @include box-shadow(0 20px 20px -15px rgba(#000, 0.7));
   }
   h2{
     margin: 0;
