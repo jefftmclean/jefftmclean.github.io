@@ -38,89 +38,9 @@ body{
   & p{color: #eee;}
   margin: 50px 0;
 }
-nav>a{
-  display: block;
-}
-p.blue{
-  color: #fff;
-}
 .container{
   padding-top: 40px;
   padding-bottom: 40px;
-}
-a{
-  text-decoration: none;
-  &:hover{
-    text-decoration: none;
-    color: $gold;
-  }
-}
-.back-link{
-  display: block;
-  padding: 20px 0;
-  color: $blue4;
-  -webkit-transition: -webkit-transform .15s ease;
-  &:hover{
-    @include transform(translate(-25px));
-  }
-}
-.contact-link{
-  display: block;
-  margin-bottom: -5px;
-  color: #fff;
-  will-change: transform;
-  @include transition(transform .15s ease);
-  &:hover{
-    @include transform(translate(30px));
-  }
-}
-.new-tab{
-  &:hover:after{
-    content: " > opens in new tab";
-    text-transform: uppercase;
-    font-size: 11px;
-    line-height: 12px;
-  }
-}
-p .email-link{
-  &:hover:after{
-    content: url(../images/external.svg);
-    width: 20px;
-    height: 20px;
-  }
-}
-.tel{
-  &:hover:after{
-    content: " > opens calling app";
-    text-transform: uppercase;
-    font-size: 11px;
-    line-height: 12px;
-  }
-}
-p{
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 28px;
-  margin: 30px 0;
-  a{
-    font-weight: 600;
-  }
-}
-hr{
-  margin-top: 15px;
-  padding-top: 1px;
-  background-color: $gold;
-  border: none;
-  margin-top: 20px;
-}
-small{
-  color: #888;
-  margin: 5px 0;
-  font-size: 15px;
-  a{
-    font-weight: 600;
-    color: $blue1;
-  }
 }
 h1{
   color: $blue3;
@@ -138,14 +58,6 @@ h2{
   transition: translate .1s;
   letter-spacing: -.3px;
 }
-.img-titling{
-  text-align: center;
-  padding:20px;
-  padding-top: 40px;
-}
-.img-container{
-  padding: 5px;
-}
 h3{
   text-transform: uppercase;
   font-size: 18px;
@@ -153,7 +65,7 @@ h3{
   letter-spacing: 1px;
   .glyphicon{
     font-size: 13px;
-    line-height: 20px;
+    line-height: 18px;
     vertical-align: text-top;
   }
 }
@@ -164,8 +76,73 @@ h4{
   font-weight: 600;
   line-height: 19px;
 }
+p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 30px 0;
+}
+hr{
+  margin-top: 15px;
+  padding-top: 1px;
+  background-color: $gold;
+  border: none;
+  margin-top: 20px;
+}
+small{
+  color: #888;
+  margin: 5px 0;
+  font-size: 15px;
+  a{
+    font-weight: 600;
+    color: $blue1;
+  }
+}
+a{
+  text-decoration: none;
+  color: $blue1;
+  font-weight: 600;
+  .glyphicon-new-window{
+    width: 0;
+    overflow: hidden;
+    font-size: 13px;
+    @include transition(margin-right .1s);
+  }
+  &:hover{
+    text-decoration: none;
+    color: $gold;
+    .glyphicon-new-window{
+      width: auto;
+      margin-right: 5px;
+    }
+  }
+}
+nav>a{
+  display: block;
+}
+.back-link{
+  display: block;
+  padding: 20px 0;
+  color: $blue4;
+  will-change: margin-left;
+  @include transition(margin .1s);
+  &:hover{
+    margin-left: -10px;
+  }
+}
+.contact-link{
+  display: block;
+  margin-bottom: -7px;
+  color: #fff;
+  will-change: padding;
+  @include transition(padding .15s ease);
+  &:hover{
+    padding-left: 15px;
+  }
+}
 div .thumbnail{
   padding: 0;
+  background: #f8f8f8;
   border: none;
   border-radius: 4px;
   text-align: center;
