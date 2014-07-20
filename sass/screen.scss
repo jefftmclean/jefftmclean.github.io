@@ -17,6 +17,10 @@ $gold: #fcb31c;
 *{
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
+  font-kerning: normal;
+}
+html{
+  min-height: 100%;
 }
 body{
   font-family: "proxima-nova";
@@ -29,21 +33,33 @@ body{
 .white{
   background-color: #fff;
   margin-top: 40px;
-  padding: 20px 40px;
   border-radius: 4px;
   @include box-shadow(0 20px 20px -15px rgba(#000, 0.7));
+  h1{
+    color: $blue3;
+  }
+  h2{
+    color: $blue2;
+  }
+  h3{
+    color: #000;
+  }
+  h4{
+    color: $blue2;
+  }
+  p{
+    color: $blue3;
+  }
 }
-.dark{
-  & h1{color: $gold;}
-  & p{color: #eee;}
-  margin: 50px 0;
+.contact-container{
+  padding: 30px;
 }
 .container{
   padding-top: 40px;
   padding-bottom: 40px;
 }
 h1{
-  color: $blue3;
+  color: $gold;
   text-transform: uppercase;
   font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
@@ -52,7 +68,7 @@ h1{
   letter-spacing: -1px;
 }
 h2{
-  color: $blue2;
+  color: #eee;
   font-size: 28px;
   font-weight: 700;
   transition: translate .1s;
@@ -60,27 +76,33 @@ h2{
 }
 h3{
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 19px;
   font-weight: 800;
   letter-spacing: 1px;
   .glyphicon{
     font-size: 13px;
-    line-height: 18px;
+    line-height: inherit;
     vertical-align: text-top;
   }
 }
 h4{
-  color: $blue2;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 19px;
+  letter-spacing: 1px;
+  color: #aaa;
 }
 p{
+  color: #ddd;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
   margin: 30px 0;
+}
+ol{
+  @extend p;
 }
 hr{
   margin-top: 15px;
@@ -90,8 +112,9 @@ hr{
   margin-top: 20px;
 }
 small{
+  display: block;
   color: #888;
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 15px;
   a{
     font-weight: 600;
@@ -105,17 +128,20 @@ a{
   .glyphicon-new-window{
     width: 0;
     overflow: hidden;
-    font-size: 13px;
-    @include transition(margin-right .1s);
+    font-size: 70%;
+    @include transition(margin .1s);
   }
   &:hover{
     text-decoration: none;
     color: $gold;
     .glyphicon-new-window{
       width: auto;
-      margin-right: 5px;
+      margin: 0 5px;
     }
   }
+}
+.bold{
+  font-weight: 600;
 }
 nav>a{
   display: block;
@@ -124,9 +150,12 @@ nav>a{
   display: block;
   padding: 20px 0;
   color: $blue4;
-  will-change: margin-left;
-  @include transition(margin .1s);
-  &:hover{
+  h3{
+    will-change: margin-left;
+    @include transition(margin .1s);
+  }
+  &:hover h3{
+    color: $gold;
     margin-left: -10px;
   }
 }
@@ -137,12 +166,13 @@ nav>a{
   will-change: padding;
   @include transition(padding .15s ease);
   &:hover{
-    padding-left: 15px;
+    padding-left: 10px;
   }
 }
 div .thumbnail{
   padding: 0;
-  background: #f8f8f8;
+  color: white;
+  background: rgba(#ccc,.2);
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -154,7 +184,7 @@ div .thumbnail{
     }
     border: none;
     @include transform(translateY(-5px));
-    @include box-shadow(0 20px 20px -15px rgba(#000, 0.7));
+    @include box-shadow(0 20px 20px -10px rgba(#000, 0.3));
   }
   h2{
     margin: 0;
@@ -203,10 +233,5 @@ div .thumbnail{
   100%{
     @include transform(translate(0));
     opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  h3{
-    font-size: 16px;
   }
 }
