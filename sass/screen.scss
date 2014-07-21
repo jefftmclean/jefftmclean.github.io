@@ -42,6 +42,7 @@ body{
     color: $blue2;
   }
   h3{
+    margin-top: 50px;
     color: #000;
   }
   h4{
@@ -105,16 +106,13 @@ ol{
   @extend p;
 }
 hr{
-  margin-top: 15px;
-  padding-top: 1px;
-  background-color: $gold;
-  border: none;
-  margin-top: 20px;
+  border-top: 1px solid $gold;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 small{
   display: block;
   color: #888;
-  margin: 10px 0;
   font-size: 15px;
   a{
     font-weight: 600;
@@ -197,7 +195,12 @@ div .thumbnail{
   }
   img{
     border-radius: 3px;
+    margin: 0;
   }
+}
+img{
+  margin-bottom: 15px;
+  -webkit-backface-visibility: hidden;
 }
 #hello{
   -webkit-animation-duration: .2s;
