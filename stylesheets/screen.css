@@ -91,8 +91,12 @@ h2 {
   transition: translate .1s;
   letter-spacing: -.3px;
 }
+/* line 80, ../sass/screen.scss */
+h2 a {
+  font-weight: inherit;
+}
 
-/* line 81, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 h3 {
   text-transform: uppercase;
   font-size: 19px;
@@ -100,14 +104,14 @@ h3 {
   font-weight: 800;
   letter-spacing: 1px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 h3 .glyphicon {
   font-size: 13px;
   line-height: inherit;
   vertical-align: text-top;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 h4 {
   text-transform: uppercase;
   font-size: 14px;
@@ -117,7 +121,7 @@ h4 {
   color: #aaa;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 p, ol {
   color: #ddd;
   font-size: 20px;
@@ -126,32 +130,32 @@ p, ol {
   margin: 30px 0;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 hr {
   border-top: 1px solid #fcb31c;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 small {
   display: block;
   color: #888;
   font-size: 15px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 small a {
   font-weight: 600;
   color: #5e7c88;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #5e7c88;
   font-weight: 600;
 }
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 a .glyphicon-new-window {
   width: 0;
   overflow: hidden;
@@ -161,51 +165,55 @@ a .glyphicon-new-window {
   -o-transition: margin 0.1s;
   transition: margin 0.1s;
 }
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
   color: #fcb31c;
 }
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 a:hover .glyphicon-new-window {
   width: auto;
   margin: 0 5px;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 nav > a {
   display: block;
 }
+/* line 154, ../sass/screen.scss */
+nav small {
+  margin-top: -7px;
+  margin-bottom: 5px;
+}
 
-/* line 150, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .back-link {
   display: block;
-  padding: 20px 0;
   color: #24221f;
 }
-/* line 154, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .back-link h3 {
+  margin: 0;
   will-change: margin-left;
   -webkit-transition: margin 0.1s;
   -moz-transition: margin 0.1s;
   -o-transition: margin 0.1s;
   transition: margin 0.1s;
 }
-/* line 158, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .back-link:hover h3 {
   color: #fcb31c;
   margin-left: -10px;
 }
 
-/* line 163, ../sass/screen.scss */
-.contact-link {
+/* line 172, ../sass/screen.scss */
+.forward-link {
   display: block;
-  margin-bottom: -7px;
   color: #fff;
   will-change: padding;
   -webkit-transition: padding 0.15s ease;
@@ -213,12 +221,21 @@ nav > a {
   -o-transition: padding 0.15s ease;
   transition: padding 0.15s ease;
 }
-/* line 169, ../sass/screen.scss */
-.contact-link:hover {
+/* line 177, ../sass/screen.scss */
+.forward-link h3 {
+  padding: 10px 0;
+  margin: 0;
+}
+/* line 181, ../sass/screen.scss */
+.forward-link:hover {
   padding-left: 10px;
 }
+/* line 183, ../sass/screen.scss */
+.forward-link:hover h3 {
+  color: #fcb31c;
+}
 
-/* line 173, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 div .thumbnail {
   padding: 0;
   color: white;
@@ -229,7 +246,7 @@ div .thumbnail {
   transition: all .15s ease;
   -webkit-backface-visibility: hidden;
 }
-/* line 182, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 div .thumbnail:hover {
   border: none;
   -webkit-transform: translateY(-5px);
@@ -241,35 +258,35 @@ div .thumbnail:hover {
   -moz-box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.3);
 }
-/* line 183, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 div .thumbnail:hover h2 {
   color: #fcb31c;
 }
-/* line 190, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 div .thumbnail h2 {
   margin: 0;
   margin-top: 5px;
   padding: 0;
 }
-/* line 195, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 div .thumbnail h4 {
   margin: 0;
   padding: 0;
 }
-/* line 199, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 div .thumbnail img {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin: 0;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 img {
   margin-bottom: 15px;
   -webkit-backface-visibility: hidden;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #hello {
   -webkit-animation-duration: .2s;
   -webkit-animation-name: hello;
@@ -279,7 +296,7 @@ img {
 }
 
 @-webkit-keyframes hello {
-  /* line 217, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -288,7 +305,7 @@ img {
     transform: rotate(0);
   }
 
-  /* line 220, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate(1deg) translateY(-3px);
     -moz-transform: rotate(1deg) translateY(-3px);
@@ -297,7 +314,7 @@ img {
     transform: rotate(1deg) translateY(-3px);
   }
 
-  /* line 223, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -307,7 +324,7 @@ img {
   }
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #me {
   -webkit-animation-name: me;
   -webkit-animation-duration: 2.2s;
@@ -319,7 +336,7 @@ img {
 }
 
 @-webkit-keyframes me {
-  /* line 233, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   0% {
     -webkit-transform: translate(-50px);
     -moz-transform: translate(-50px);
@@ -329,12 +346,12 @@ img {
     opacity: 0;
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 240, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   100% {
     -webkit-transform: translate(0);
     -moz-transform: translate(0);

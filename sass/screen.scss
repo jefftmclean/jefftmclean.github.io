@@ -77,6 +77,9 @@ h2{
   font-weight: 700;
   transition: translate .1s;
   letter-spacing: -.3px;
+  a{
+    font-weight: inherit;
+  }
 }
 h3{
   text-transform: uppercase;
@@ -144,14 +147,20 @@ a{
 .bold{
   font-weight: 600;
 }
-nav>a{
-  display: block;
+nav{
+  &>a{
+    display: block;
+  }
+  small{
+    margin-top: -7px;
+    margin-bottom: 5px;
+  }
 }
 .back-link{
   display: block;
-  padding: 20px 0;
   color: $blue4;
   h3{
+    margin: 0;
     will-change: margin-left;
     @include transition(margin .1s);
   }
@@ -160,14 +169,20 @@ nav>a{
     margin-left: -10px;
   }
 }
-.contact-link{
+.forward-link{
   display: block;
-  margin-bottom: -7px;
   color: #fff;
   will-change: padding;
   @include transition(padding .15s ease);
+  h3{
+    padding: 10px 0;
+    margin: 0;
+  }
   &:hover{
     padding-left: 10px;
+    h3{
+      color: $gold;
+    }
   }
 }
 div .thumbnail{
