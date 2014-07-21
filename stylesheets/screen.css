@@ -254,17 +254,18 @@ div .thumbnail h4 {
 }
 /* line 196, ../sass/screen.scss */
 div .thumbnail img {
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   margin: 0;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 img {
   margin-bottom: 15px;
   -webkit-backface-visibility: hidden;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #hello {
   -webkit-animation-duration: .2s;
   -webkit-animation-name: hello;
@@ -274,7 +275,7 @@ img {
 }
 
 @-webkit-keyframes hello {
-  /* line 213, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -283,7 +284,7 @@ img {
     transform: rotate(0);
   }
 
-  /* line 216, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate(1deg) translateY(-3px);
     -moz-transform: rotate(1deg) translateY(-3px);
@@ -292,7 +293,7 @@ img {
     transform: rotate(1deg) translateY(-3px);
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 220, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -302,7 +303,7 @@ img {
   }
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #me {
   -webkit-animation-name: me;
   -webkit-animation-duration: 2.2s;
@@ -314,7 +315,7 @@ img {
 }
 
 @-webkit-keyframes me {
-  /* line 229, ../sass/screen.scss */
+  /* line 230, ../sass/screen.scss */
   0% {
     -webkit-transform: translate(-50px);
     -moz-transform: translate(-50px);
@@ -324,12 +325,12 @@ img {
     opacity: 0;
   }
 
-  /* line 233, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 236, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   100% {
     -webkit-transform: translate(0);
     -moz-transform: translate(0);

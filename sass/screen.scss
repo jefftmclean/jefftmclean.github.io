@@ -194,7 +194,8 @@ div .thumbnail{
     padding: 0;
   }
   img{
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     margin: 0;
   }
 }
