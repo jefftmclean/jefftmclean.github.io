@@ -6,24 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jeff McLean / Hello</title>
-    <meta name="description" content="Jeff McLean's nonexistent portfolio" />
-   
+    <meta name="description" content="Jeff's Web Site" />
+    <style>
+     body {
+       text-align: center;
+       padding: 5%;
+       transition: background .5s;
+       background: hsl(150,100%,85%);
+       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+       line-height: 1.5;
+     }
+    </style>
+
   </head>
-  <body>
-    <div class="container">
+  <body id='body'>
+    <div id="container">
       <h1>
-        Jeff McLean's Website
+        Jeff's Web Site
       </h1>
       <p>
-        Hello! Congratulations on finding my website.
+        Hello! Congratulations on finding this.
       </p>
       <p>
-        Ideally a portfolio would be here, but I'm prioritizing other things right now. I appreciate your patience!
+        Ideally a portfolio would be here, but I'm prioritizing other things right now. <br> I appreciate your patience!
       </p>
       <p>
         Feel free to leave a note at <a href="mailto:hello@jeffmclean.io">hello@jeffmclean.io</a>.
       </p>
+      <br>
+      <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZEVXcPoINRIDTDiB?si=AVxzzfHaRBugf7BUFPeqVQ">What the Computer Thinks I'm Into</a>
     </div>
   </body>
   <script src="hover-disable.js"></script>
+  <script>
+  var body = document.getElementById('body');
+  var hue = 150;
+  setInterval(function() {
+    body.style.background = "hsl("+hue+",100%,85%)";
+    hue += 5;
+  }, 100);
+  </script>
 </html>
